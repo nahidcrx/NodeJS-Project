@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<head>
+
+</head>
+<body>
+ <form name="regform" action="" method="post" class="register" >
+            
+            <fieldset class="row1">
+                <legend>Account Details
+                </legend>
+                <p>
+                    <label>Fast Name : *</label>
+                    <input type="text" onkeyup="validation()" name ="firstname" id ="firstname" value="<%=First_Name %>" placeholder = ""> 
+					<span id="msg1"></span> </br> </br>
+					
+                    <label>Last Name : *</label>
+                    <input type="text" onkeyup="validation()" name ="lastname" id ="lirstname" value="<%=Last_Name %>" placeholder = "">
+					<span id="msg2"></span>
+                </p>
+				<p>
+				 <label> User Name : *</label>
+					<input type ="text" onkeyup="validation()" name ="uname" id ="username" value="<%=User_Name %>"placeholder="">
+					<span id="msg3"></span>
+					
+				</p>
+                <p>
+                    <label>Password : * </label>
+                    <input type="password" onkeyup="validation()" name ="pass" id ="password" value="<%=Pass %>" placeholder = ""> </br> </br>
+                    
+                    
+                </p>
+				
+            </fieldset>
+            <fieldset class="row2">
+                <legend>Personal Details
+                </legend>
+               
+                <p>
+                    <label>Phone :*
+                    </label>
+                    <input type="text" onkeyup="validation()" id="phn" name="phone" value="<%=Phone %>" maxlength="11" >
+					<span id="msg5"></span>
+                </p>
+
+				 <p>
+                    <label class="">E-mail :</label>
+                    <input type="text" onkeyup="validation()" id="mail" name="mail" value="<%=Email %>" class="long" placeholder="example@mail.com"/>
+					<span id="msg6"></span>
+					
+                </p>
+
+
+
+            </fieldset>
+			   
+            <div><input type="submit" class="button" onclick="return validation()" value="Update>" /></div>
+		
+						
+        </form>
+
+</body>
+
+</html>
